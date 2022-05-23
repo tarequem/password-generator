@@ -2,7 +2,27 @@
 
 
 // Get references to the #generate element
+var confirmLength;
+var confirmUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var confirmLower = "abcdefghijklmnopqrstuvwxyz";
+var confirmNumber = "0123456789";
+var confirmSpecial = "~`! @#$%^&*()_-+={[}]|\\\:\";'<,>.?/";
+
+//prompts that will ask the user what characters they want in their password after clicking button
 var generateBtn = document.querySelector("#generate");
+function generatePassword() {
+  console.log("Generate")
+  //prompt user for confirming length
+  //confirm lowercase
+  //confirm uppercase 
+  //confirm number
+  //isNaN() to determine whether a number is being used
+  //confirm special
+  //!variables to check if not true/alerting for correction
+  //if statement - alert they need to choose at least one character
+  //charAt to return characters from chosen index 
+  return password;
+};
 
 // Write password to the #password input
 function writePassword() {
@@ -25,19 +45,5 @@ generateBtn.addEventListener("click", writePassword);
 
 //function generating password writePassword()
 
-//isNaN() to determine whether a number is being used
-
-//prompts that will ask the user what characters they want in their password
-
-var confirmUpper = confirm ("Would like to use UPPER case letters?");
-
-var confirmLower = confirm ("Would you like to use LOWER case letters?")
-
-//!variables to check if not true/alerting for correction
-
-//check to see if true
 
 //random math generator, picking randomly from each array (letters, numbers, special characters) to make password at specified length. 
-
-
-//charAt to return characters from chosen index 
