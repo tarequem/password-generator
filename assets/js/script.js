@@ -32,11 +32,32 @@ function generatePassword() {
       return generatePassword();
     }
 //confirm windows for character sets user wants
+  var confirmLower = window.confirm("Would you like LOWER case characters?");
+  var confirmUpper = window.confirm("Would you like UPPER case characters?");
+  var confirmNumber = window.confirm("Would you like NUMBERAL characters?");
+  var confirmSpecial = window.confirm("Would you like SPECIAL characters?");
 
 //alert if user denied all character sets
-
+  if (!confirmUpper && !confirmLower && !confirmNumber && !confirmSpecial) {
+    alert("Choose at least one character type!");
+    return generatePassword();
+  }
 //if statements to connect confirm windows to global variables 
-
+  if(confirmLower){
+    characters += lower;
+  }
+  
+  if(confirmUpper){
+    characters += upper;
+  }
+  
+  if(confirmNumber){
+    characters += number;
+  }
+  
+  if(confirmSpecial){
+    characters += special;
+  }
 //combines characters to form userPassword 
 
 //returns password to generatepassword 
