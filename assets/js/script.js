@@ -59,7 +59,9 @@ function generatePassword() {
     characters += special;
   }
 //combines characters to form userPassword 
-
+  for (var i = 0; i < confirmLength; i++ ) {
+    userPassword += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
 //returns password to generatepassword 
   return userPassword;
 };
