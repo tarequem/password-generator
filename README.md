@@ -1,6 +1,6 @@
 # Password Generator
 
-#URL for GitHub repository and live URL
+# URL for GitHub repository and live URL
 
 * https://github.com/tarequem/password-generator
 * https://tarequem.github.io/password-generator/
